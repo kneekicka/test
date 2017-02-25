@@ -5,7 +5,7 @@ Instructions to run the app:
 
 1) Download the repository - "git clone https://github.com/kneekicka/test.git"
 
-2) Type in in your terminal - "cd test"
+2) Type in your terminal - "cd test"
 
 3) Install all gulp elements - "npm install"
 
