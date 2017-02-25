@@ -1,0 +1,58 @@
+.login-form{
+
+	margin-top: 50px;
+
+}
+
+.login-button, .logout-button{
+	float: right;
+}
+
+.logout-button{
+	margin-top: 14px;
+}
+
+.products{
+
+	md-list{
+
+		padding: 0;
+
+		md-list-item{
+
+			transition: all ease-in .3s;
+
+			&:hover{
+
+				cursor: pointer;
+				background-color: #eee;
+
+			}
+
+			&:first-of-type{
+				background-color: #eee;
+
+				&:hover{
+					cursor: initial;
+				}
+
+				p{
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+			}
+
+		}
+
+	}
+
+}
+
+.add-new-product{
+
+	float: right;
+    margin-top: 50px;
+    margin-right: 5%;
+    font-size: 2em;
+    
+}

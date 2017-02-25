@@ -1,0 +1,21 @@
+<md-content class="full-heigth products">
+    <md-list>
+        <md-list-item class="md-3-line">
+            <div class="md-list-item-text" layout="row">
+                <p flex>Product name</p>
+                <p flex>Product quantity</p>
+                <p flex>Product price</p>
+            </div>
+            <md-divider></md-divider>
+        </md-list-item>
+        <md-list-item class="md-3-line" ng-repeat="product in products" ng-click="productInfo($index)">
+            <div class="md-list-item-text" layout="row">
+                <p flex>{{product.name}}</p>
+                <p flex>{{product.quantity}}</p>
+                <p flex>{{product.price | currency}}</p>
+            </div>
+            <md-divider></md-divider>
+        </md-list-item>
+    </md-list>
+    <md-button ng-click="addNewProduct()" class="md-fab md-primary add-new-product">+</md-button>
+</md-content>

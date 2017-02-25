@@ -1,0 +1,49 @@
+<md-dialog aria-label="Add a new product to the list">
+    <form ng-cloak name="ProductForm">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Add a new product to the list</h2>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <md-input-container class="md-block">
+                    <label>Product name</label>
+                    <input type="text" name="name" ng-model="product.name" required=""/>
+                    <div ng-messages="Form.name.$error" role="alert" multiple="">
+                        <div ng-message="required" class="my-message">Please enter product name.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Product quantity</label>
+                    <input type="text" name="quantity" ng-model="product.quantity" required=""/>
+                    <div ng-messages="Form.quantity.$error" role="alert" multiple="">
+                        <div ng-message="required" class="my-message">Please enter product quantity.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Product price</label>
+                    <input type="number" name="price" ng-model="product.price" required=""/>
+                    <div ng-messages="Form.price.$error" role="alert" multiple="">
+                        <div ng-message="required" class="my-message">Please enter product price.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Product description</label>
+                    <textarea rows="2" cols="50" name="description" ng-model="product.description" required=""></textarea>
+                    <div ng-messages="Form.description.$error" role="alert" multiple="">
+                        <div ng-message="required" class="my-message">Please enter product description.</div>
+                    </div>
+                </md-input-container>
+            </div>
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+            <md-button ng-click="closeDialog()">
+              Cancel
+            </md-button>
+            <md-button ng-disabled="!ProductForm.$valid" ng-click="addProduct()">
+              Add
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

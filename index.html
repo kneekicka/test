@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="dist/vendors.min.css">
+		<link rel="stylesheet" href="dist/main.min.css">
+		<title>Angular test task</title>
+	</head>
+	<body ng-app="testApp" ng-controller="mainCtrl">
+	    <md-toolbar layout="row">
+	        <div class="md-toolbar-tools" flex>
+	            Shopping list
+	        </div>
+	       	<div flex ng-if="showLogoutBtn">
+    			<md-button ng-click="logout()" class="md-raised logout-button"> Logout </md-button>
+	        </div>
+	    </md-toolbar>
+		<div ui-view="inner"></div>
+		<script src="dist/vendor.min.js"></script>
+		<script src="dist/app.min.js"></script>
+	</body>
+</html>

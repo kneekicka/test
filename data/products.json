@@ -1,0 +1,35 @@
+{
+	"products": [
+		{
+			"name": "Milk",
+			"quantity": "1 pack",
+			"price": 1,
+			"description": "I'm gonna need some milk for my serial in the morning"
+		},
+		{
+			"name": "Bread",
+			"quantity": "1 loaf",
+			"price": 0.5,
+			"description": "I would like to eat some bread at dinner"
+		},
+		{
+			"name": "Chicken",
+			"quantity": "1 kg",
+			"price": 5,
+			"description": "I need to eat chicken to get my daily portion of protein"
+		},
+		{
+			"name": "Tomatoes",
+			"quantity": "1 kg",
+			"price": 2,
+			"description": "I need tomatoes for my salad"
+
+		},
+		{
+			"name": "Potatoes",
+			"quantity": "2 kg",
+			"price": 2,
+			"description": "I want to eat fried potatoes with chicken"
+		}
+	]
+}
