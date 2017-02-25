@@ -12,3 +12,5 @@ Instructions to run the app:
 4) Run the server - "node server.js"
 
 5) Go to your favourite browser and type following into your url - "http://localhost:3000"
+
+6) To enter the app just type in login form ligin: admin, password: admin
